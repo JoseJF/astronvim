@@ -32,6 +32,16 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>v"] = {"<C-w>v<cr>:Neotree focus<cr>"},
+    ["<leader>h"] = {"<C-w>s<cr>:Neotree focus<cr>"},
+    ["<leader>g"] = {":ToggleBlame<cr>"},
+    ["<leader>f"] = {":AerialToggle<cr>"},
+    ["<leader>c"] = {":call InterestingWords('n')<cr>"},
+    ["<leader>u"] = {":call UncolorAllWords()<cr>"},
+    ["f"] = {":Neotree focus<cr>"},
+    ["<C-\\>"] = {":ToggleTerm<cr>"},
+    ["<C-g>"] = {":Telescope live_grep<cr>"},
+    ["<C-f>"] = {":Telescope find_files<cr>"},
   },
   t = {
     -- setting a mapping to false will disable it
